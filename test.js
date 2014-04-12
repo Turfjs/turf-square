@@ -8,7 +8,7 @@ test('square', function(t){
   var sq1 = square(bbox1)
   var sq2 = square(bbox2)
 
-  t.equal(sq1, [-2.5, 0, 7.5, 10])
-  t.equal(sq2, [0, -2.5, 10, 7.5])
+  t.deepEqual(sq1, [-2.5, 0, 7.5, 10])
+  t.deepEqual(sq2, [0, -2.5, 10, 7.5])
   t.end()
 })

@@ -24,5 +24,10 @@
   "homepage": "https://github.com/morganherlocker/turf-square",
   "devDependencies": {
     "tape": "^2.12.3"
+  },
+  "dependencies": {
+    "turf-distance": "^0.1.1",
+    "turf-midpoint": "^0.1.0",
+    "turf-point": "^0.1.0"
   }
 }
