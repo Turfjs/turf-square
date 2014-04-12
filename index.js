@@ -1,3 +1,6 @@
+var test = require('tape')
+var square = require('./')
+
 var t = {}
 var midpoint = require('../lib/midpoint'),
     point = require('../lib/point'),
