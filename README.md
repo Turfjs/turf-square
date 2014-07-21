@@ -4,6 +4,26 @@ turf-square
 
 Calculates the minimum square bounding box for another bounding box.
 
+###Install
+
+```sh
+npm install turf-square
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|bbox|[xmin, ymin, xmay, ymax]|
+
+###Usage
+
+```js
+square(bbox)
+```
+
+###Example
+
 ```js
 var square = require('turf-square')
 
