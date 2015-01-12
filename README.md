@@ -27,9 +27,9 @@ square(bbox)
 ```js
 var square = require('turf-square')
 
-var bbox = [0,0,5,10]]
+var bbox = [0,0,5,10];
 
-var squared = square(bbox)
+var squared = square(bbox);
 
 console.log(square) // [-2.5, 0, 7.5, 10]
 ```

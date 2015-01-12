@@ -2,6 +2,20 @@ var midpoint = require('turf-midpoint');
 var point = require('turf-point');
 var distance = require('turf-distance');
 
+/**
+ * Calculates the minimum square bounding box for another bounding box.
+ *
+ * @module turf/square
+ * @param {Array<number>} bbox
+ * @return {Array<number>} A square surrounding that bounding box
+ * @example
+ * var bbox = [0,0,5,10];
+ * var squared = turf.square(bbox)
+ * var features = turf.featurecollection([
+ *   turf.bboxPolygon(bbox),
+ *   turf.bboxPolygon(squared)]);
+ * //=features
+ */
 module.exports = function(bbox){
   var squareBbox = [0,0,0,0];
   var lowLeft = point(bbox[0], bbox[1]);
