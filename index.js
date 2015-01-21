@@ -3,7 +3,7 @@ var point = require('turf-point');
 var distance = require('turf-distance');
 
 /**
- * Calculates the minimum square bounding box for another bounding box.
+ * Takes a bounding box and calculates the minimum square bounding box that would contain the input.
  *
  * @module turf/square
  * @param {Array<number>} bbox
