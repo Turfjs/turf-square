@@ -9,11 +9,12 @@ var distance = require('turf-distance');
  * @param {Array<number>} bbox a bounding box
  * @return {Array<number>} a square surrounding `bbox`
  * @example
- * var bbox = [0,0,5,10];
- * var squared = turf.square(bbox)
+ * var bbox = [-20,-20,-15,0];
+ * var squared = turf.square(bbox);
  * var features = turf.featurecollection([
  *   turf.bboxPolygon(bbox),
  *   turf.bboxPolygon(squared)]);
+ *
  * //=features
  */
 module.exports = function(bbox){
