@@ -19,10 +19,10 @@ var distance = require('turf-distance');
  */
 module.exports = function(bbox){
   var squareBbox = [0,0,0,0];
-  var lowLeft = point(bbox[0], bbox[1]);
-  var topLeft = point(bbox[0], bbox[3]);
-  var topRight = point(bbox[2], bbox[3]);
-  var lowRight = point(bbox[2], bbox[1]);
+  var lowLeft = point([bbox[0], bbox[1]]);
+  var topLeft = point([bbox[0], bbox[3]]);
+  var topRight = point([bbox[2], bbox[3]]);
+  var lowRight = point([bbox[2], bbox[1]]);
 
   var horizontalDistance = distance(lowLeft, lowRight, 'miles');
   var verticalDistance = distance(lowLeft, topLeft, 'miles');
