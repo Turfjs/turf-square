@@ -10,7 +10,9 @@ var distance = require('turf-distance');
  * @return {Array<number>} a square surrounding `bbox`
  * @example
  * var bbox = [-20,-20,-15,0];
+ *
  * var squared = turf.square(bbox);
+ *
  * var features = turf.featurecollection([
  *   turf.bboxPolygon(bbox),
  *   turf.bboxPolygon(squared)]);
