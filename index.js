@@ -14,9 +14,13 @@ var distance = require('turf-distance');
  *
  * var squared = turf.square(bbox);
  *
- * var features = turf.featurecollection([
- *   turf.bboxPolygon(bbox),
- *   turf.bboxPolygon(squared)]);
+ * var features = {
+ *   "type": "FeatureCollection",
+ *   "features": [
+ *     turf.bboxPolygon(bbox),
+ *     turf.bboxPolygon(squared)
+ *   ]
+ * };
  *
  * //=features
  */
